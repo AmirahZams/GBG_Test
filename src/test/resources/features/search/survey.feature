@@ -1,6 +1,7 @@
-Feature: Add new item to TODO list
+Feature: Assert text for option Good in survey
 
-Scenario: Add buying milk to the list
-Given Rama is looking at his TODO list
-When he adds "Buy some milk" to the list
-Then he sees "Buy some milk" as an item in the TODO list
+Scenario: Assert text for option Good in survey
+Given User is in the survey page
+When he select Good option
+And he click on Next button
+Then he will sees "Have a nice day." text

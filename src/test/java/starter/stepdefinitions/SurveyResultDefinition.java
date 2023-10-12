@@ -27,7 +27,7 @@ public class SurveyResultDefinition {
        actor.attemptsTo(Click.on(Button.withText("Next")));
     }
     @Then("{actor} will sees {string} text")
-    public void he_will_sees_text(Actor actor, String expectedItemName) {
+    public void he_will_sees_text(Actor actor) {
         actor.attemptsTo(Ensure.that(SurveyResultPage.GoodAssert).hasText("Have a nice day."));
     }
 }
